@@ -1,18 +1,62 @@
-# College-Management-System
+# College Management System
 
-Environment & Tools:
+This is a web-based College Management System designed to streamline and automate various administrative and academic processes within a college. It leverages modern web technologies to provide an efficient and user-friendly platform for managing college operations.
 
-1.       .Net Framework 4.8
-2.       Visual Studio 2019
-3.       Entity Framework 6
-4.       MVC 5
-5.       Angular JS
+## Table of Contents
 
-Procedure: 
-Please download the project and then run database migration please note that you have to select Data\CMS.Repository as a default project. After successful migration data will automatically be inserted into the database and then run project. 
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [System Architecture](#system-architecture)
+- [Installation](#installation)
 
-Architecture:
+## Features
 
-1.	Data -> There are two projects under this folder one is CMS.Data and other one is CMS.Repository. CMS.Data is used for Business Entities and CMS.Repostitry is used for abstracting data access.
-2.	Libraries -> There are two projects under this folder one is CMS.Configuration and other one is CMS.Services. CMS.Configuration is used for Messaging purpose and CMS.Services is used for SQL related activities.
-3.	Presentation -> This is used for to display View and connect with angular js.  
+The College Management System offers the following features:
+
+- **Student Management**: Manage student information, including personal details, enrollment, and academic records.
+- **Faculty Management**: Handle faculty details, assignments, and schedules.
+- **Course Management**: Organize courses, syllabi, and associated resources.
+- **Attendance Tracking**: Monitor and record student attendance efficiently.
+- **Grading System**: Facilitate grade entry, calculation, and report generation.
+- **Library Management**: Oversee library resources, lending, and returns.
+- **Timetable Scheduling**: Create and manage class and exam timetables.
+- **User Authentication**: Secure login for administrators, faculty, and students.
+
+## Technologies Used
+
+The system is built using the following technologies:
+
+- **Frontend**:
+  - AngularJS: For dynamic and responsive user interfaces.
+  - HTML5 & CSS3: For structuring and styling web pages.
+  - Bootstrap: For responsive design and layout.
+- **Backend**:
+  - ASP.NET MVC 5: For server-side logic and handling HTTP requests.
+  - Entity Framework 6: For object-relational mapping and database interactions.
+- **Database**:
+  - LocalDB: A lightweight version of SQL Server for data storage.
+
+## System Architecture
+
+The project follows a layered architecture to promote separation of concerns and enhance maintainability:
+
+1. **Data Layer**:
+   - **CMS.Data**: Contains business entities representing the core data structures.
+   - **CMS.Repository**: Provides data access abstraction and repository patterns.
+2. **Service Layer**:
+   - **CMS.Services**: Implements business logic and interacts with the data layer.
+   - **CMS.Configuration**: Manages configuration settings and messaging.
+3. **Presentation Layer**:
+   - **CMS.UI**: Handles user interactions, input validation, and displays information using AngularJS and ASP.NET MVC.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/niyathnair/CMS-Application-dotNET.git
+## Collaborators
+
+Niyath Nair, Chaital Ghan
